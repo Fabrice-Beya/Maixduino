@@ -3,11 +3,11 @@
 
 #include "g_def.h"
 
-#define	max_vc_con	3	//VAD最多检测的语音段数
-#define frame_time	20						// 每帧时间长度 单位ms
-#define frame_mov_t	10						// 帧移
-#define FRAME_LEN	(frame_time*fs/1000)	// 帧长
-#define frame_mov	(frame_mov_t *fs/1000)	// 帧移，相邻帧交叠部分
+#define	max_vc_con	3						// Maximum number of voice segments detected by VAD
+#define frame_time	20						// Time length per frame unit ms
+#define frame_mov_t	10						// Frame shift
+#define FRAME_LEN	(frame_time*fs/1000)	// Frame length
+#define frame_mov	(frame_mov_t *fs/1000)	// Frame shift, overlapping parts of adjacent frames
 
 #ifdef __cplusplus
 extern "C" {
